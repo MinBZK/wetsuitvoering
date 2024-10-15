@@ -47,8 +47,8 @@ let respecConfig = {
       url: "https://pna-group.com/",
     },
     {
-      name: "DirkJan van der Hoven",
-      url: "https://pna-group.com/",
+      name: "Dirkjan van der Hoven",
+      url: "https://hit.nl",
     },
     {
       name: "Sjir Nijssen",
