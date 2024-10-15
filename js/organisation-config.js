@@ -1,22 +1,30 @@
 // Plaats dit bestand op een centrale locatie voor hergebruik in meerdere documenten.
 var organisationConfig = {
-    nl_organisationName: "Logius",
-    nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
-    nl_organisationPublishURL: "https://gitdocumentatie.logius.nl/publicatie/",
-    logos: [{
+    nl_organisationName: "MinBZK",
+    nl_organisationStylesURL:
+      "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
+    nl_organisationPublishURL: "https://regels.overheid.nl/publicaties/",
+    logos: [
+      {
         src: "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
         alt: "Logius",
         id: "Logius",
         height: 77,
         width: 44,
         url: "https://www.logius.nl/standaarden",
-    }],
-
+      },
+    ],
+  
     postProcess: [window.respecMermaid.createFigures],
 
-    latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName"],
-    thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
-    prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
+// Original config
+//    latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName"],
+//    thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
+//    prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
+
+    latestVersion: ["nl_organisationPublishURL", "shortName"],
+    thisVersion: ["nl_organisationPublishURL", "shortName", "/v", "publishVersion"],
+    prevVersion: ["nl_organisationPublishURL", "shortName", "/v", "previousPublishVersion"],
     useLogo: true,
     useLabel: true,
 
@@ -67,7 +75,7 @@ var organisationConfig = {
             sotd: "Status van dit document",
             def: `Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
             wv: `Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.`,
-            cv: `Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar `,
+            cv: `Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar de redacteurs`,
             vv: `Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.`,
             basis: "Dit is een document zonder officiële status.",
         },
