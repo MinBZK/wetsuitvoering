@@ -88,7 +88,7 @@ let respecConfig = {
   alternateFormats: [
     {
         label: "pdf",
-        uri: "Wetsanalyse.pdf",
+        uri: "Wetsuitvoering.pdf",
     },
   ],
 };
