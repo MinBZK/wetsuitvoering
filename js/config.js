@@ -22,9 +22,9 @@ let respecConfig = {
 
   // Content
   content: {
-    "H1-Inleiding": "informative",
-    "H2-JAS": "",
-    "H3-Kader": ""
+    "H1-classificaties": "",
+    "H2-scenarios": "",
+    "H3-rechtsgevolg": ""
   },
   editors: [
     {
@@ -41,19 +41,19 @@ let respecConfig = {
   }],
   authors: [
     {
-      name: "Anouschka Ausems",
-      url: "https://belastingdienst.nl",
-    },
-    {
       name: "John Bulles",
       url: "https://pna-group.com/",
     },
     {
-      name: "Mariette Lokin",
-      url: "https://hooghiemstra-en-partners.nl",
+      name: "DirkJan van der Hoven",
+      url: "https://pna-group.com/",
+    },
+    {
+      name: "Sjir Nijssen",
+      url: "https://pna-group.com/",
     }
   ],
-  github: "https://github.com/MinBZK/wetsanalyse/",
+  github: "https://github.com/MinBZK/wetgeving/",
 
   // References & footnotes
   localBiblio: {

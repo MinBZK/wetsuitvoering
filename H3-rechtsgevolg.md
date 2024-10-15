@@ -1,0 +1,4 @@
+# Expliciet toevoegen van de classificatie rechtsgevolg
+Eén van de wezenlijke toevoegingen in het JRM 2 is het toevoegen van een aparte hoofdclassificatie voor rechtsgevolgen. In het JAS waren rechtsgevolgen zeker al onderkend, maar zat deze classificatie nog verstopt in de classificatie van rechtsfeit.
+ 
+Een rechtsgevolg beschrijft het ontstaan, wijzigen van een of meerdere eigenschappen of eindigen van een rechtsbetrekking of van een juridisch relevant feit. Door deze classificatie ook voor rechtsgevolg expliciet te maken, is deze specifiek terug te leiden naar wet- en regelgevingsteksten (of een toevoeging gedaan door het MDT) en kan deze inhoudelijk ook beter vastgelegd worden. Dit laatste is zeker voor het beschrijven van juridische scenario’s en dus tijdig testen van de wetsuitvoering van groot belang. In de administratie van de wetsuitvoering vormen rechtsgevolgen de receptuur van hetgeen applicaties en registers moeten uitvoeren.
