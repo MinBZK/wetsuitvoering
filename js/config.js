@@ -55,7 +55,7 @@ let respecConfig = {
       url: "https://pna-group.com/",
     }
   ],
-  github: "https://github.com/MinBZK/wetgeving/",
+  github: "https://github.com/MinBZK/wetsuitvoering/",
 
   // References & footnotes
   localBiblio: {
