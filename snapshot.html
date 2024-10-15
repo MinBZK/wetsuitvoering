@@ -43,7 +43,7 @@ dfn{cursor:pointer}
   
   
 <script>document.title = respecConfig.title</script>
-<title>titleText 0.0.3</title>
+<title>Specificatie van het juridisch referentiemodel (JRM) 1.0.0</title>
   
 <title>Default</title>
   
@@ -107,25 +107,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="Tekst">
-<style>
-.hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
-@media (prefers-color-scheme:dark){
-.hljs{--base:#282c34;--mono-1:#abb2bf;--mono-2:#818896;--mono-3:#5c6370;--hue-1:#56b6c2;--hue-2:#61aeee;--hue-3:#c678dd;--hue-4:#98c379;--hue-5:#e06c75;--hue-5-2:#be5046;--hue-6:#d19a66;--hue-6-2:#e6c07b}
-}
-.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;color:var(--mono-1,#383a42);background:#fafafa;background:var(--base,#fafafa)}
-.hljs-comment,.hljs-quote{color:#717277;color:var(--mono-3,#717277);font-style:italic}
-.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4;color:var(--hue-3,#a626a4)}
-.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;color:var(--hue-5,#ca4706);font-weight:700}
-.hljs-literal{color:#0b76c5;color:var(--hue-1,#0b76c5)}
-.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c;color:var(--hue-4,#42803c)}
-.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01;color:var(--hue-6-2,#9a6a01)}
-.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801;color:var(--hue-6,#986801)}
-.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3;color:var(--hue-2,#336ae3)}
-.hljs-emphasis{font-style:italic}
-.hljs-strong{font-weight:700}
-.hljs-link{text-decoration:underline}
-</style>
+<meta name="description" content="Deze Wetsanalyse specificatie beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.">
 <style>
 
   .sidelabel {
@@ -150,9 +132,9 @@ ul.index code{color:inherit}
   }
 </style>
 <script id="initialUserConfig" type="application/json">{
-  "nl_organisationName": "Logius",
+  "nl_organisationName": "MinBZK",
   "nl_organisationStylesURL": "https://gitdocumentatie.logius.nl/publicatie/respec/style/",
-  "nl_organisationPublishURL": "https://gitdocumentatie.logius.nl/publicatie/",
+  "nl_organisationPublishURL": "https://regels.overheid.nl/publicaties/",
   "logos": [
     {
       "src": "https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg",
@@ -168,37 +150,23 @@ ul.index code{color:inherit}
   ],
   "latestVersion": [
     "nl_organisationPublishURL",
-    "pubDomain",
-    "/",
     "shortName"
   ],
   "thisVersion": [
     "nl_organisationPublishURL",
-    "pubDomain",
-    "/",
-    "specStatus",
-    "-",
-    "specType",
-    "-",
     "shortName",
-    "-",
-    "publishDate"
+    "/v",
+    "publishVersion"
   ],
   "prevVersion": [
     "nl_organisationPublishURL",
-    "pubDomain",
-    "/",
-    "previousMaturity",
-    "-",
-    "specType",
-    "-",
     "shortName",
-    "-",
-    "previousPublishDate"
+    "/v",
+    "previousPublishVersion"
   ],
   "useLogo": true,
   "useLabel": true,
-  "license": "cc-by",
+  "license": "cc0",
   "addSectionLinks": true,
   "localizationStrings": {
     "en": {
@@ -243,7 +211,7 @@ ul.index code{color:inherit}
       "sotd": "Status van dit document",
       "def": "Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "wv": "Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.",
-      "cv": "Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar ",
+      "cv": "Dit is een door het TO goedgekeurde consultatieversie. Commentaar over dit document kan gestuurd worden naar de redacteurs",
       "vv": "Dit is een definitief concept van de nieuwe versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.",
       "basis": "Dit is een document zonder officiële status."
     },
@@ -281,50 +249,85 @@ ul.index code{color:inherit}
     }
   },
   "localBiblio": {
-    "SemVer": {
-      "href": "https://semver.org",
-      "title": "Semantic Versioning 2.0.0",
+    "HOHFELD_1": {
+      "title": "Some Fundamental Conceptions as Applied in Judicial Reasoning",
+      "href": "https://openyls.law.yale.edu/bitstream/handle/20.500.13051/11079/05_23YaleLJ16_1913_1914_.pdf?sequence=2",
+      "publisher": "Yale Law Journal (23) 1913, afl. 1, p. 16-59",
+      "id": "hohfeld_1"
+    },
+    "HOHFELD_2": {
+      "title": "Fundamental Legal Conceptions as Applied in Judicial Reasoning",
+      "href": "https://openyls.law.yale.edu/bitstream/handle/20.500.13051/3864/Fundamental_Legal_Conceptions_as_Applied_in_Judicial_Reasoning.pdf?sequence=2",
+      "publisher": "Yale Law Journal (26) 1917, afl. 8, p. 710-770.",
+      "id": "hohfeld_2"
+    },
+    "BLKAMER": {
+      "title": "Een kapstok voor herleidbare wet- en regelgeving voor dienstverlening",
+      "href": "https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef",
+      "publisher": "Harrie van Houtum (Business KnowHow Services) et al",
+      "id": "blkamer"
+    },
+    "NLSBB": {
+      "href": "https://docs.geostandaarden.nl/nl-sbb/nl-sbb/",
+      "title": "NL-SBB - Standaard voor het beschrijven van begrippen",
       "authors": [
-        "T. Preston-Werner"
+        "Geonovum Standaard - versie ter vaststelling."
       ],
-      "date": "June 2013",
-      "id": "semver"
+      "date": "16 april 2024",
+      "id": "nlsbb"
     }
   },
   "specStatus": "DEF",
-  "specType": "HR",
-  "pubDomain": "dk",
-  "shortName": "template",
-  "publishDate": "2023-06-21",
-  "publishVersion": "0.0.3",
-  "previousPublishVersion": "0.0.2",
-  "previousPublishDate": "2022-06-24",
+  "specType": "IM",
+  "pubDomain": "ronl",
+  "shortName": "wetgeving",
+  "publishDate": "2024-10-15",
+  "publishVersion": "1.0.0",
+  "previousPublishVersion": "",
+  "previousPublishDate": "",
   "previousMaturity": "WV",
-  "title": "titleText",
+  "title": "Specificatie van het juridisch referentiemodel (JRM)",
+  "subtitle": "Specificatie van het juridisch referentiemodel (JRM) dat met scenario's beschrijft hoe een burger of bedrijf een bepaald stuk wet- en regelgeving ervaart of doorloopt in de wetsuitvoering.",
   "content": {
-    "ch01": "informative",
-    "ch02": "",
-    "mermaid": ""
+    "H1-Inleiding": "informative",
+    "H2-JAS": "",
+    "H3-Kader": ""
   },
   "editors": [
     {
-      "name": "Logius Standaarden",
-      "company": "Logius",
-      "companyURL": "https://github.com/Logius-standaarden"
+      "name": "Mariette Lokin",
+      "mailto": "mariette@hooghiemstra-en-partners.nl",
+      "company": "Hooghiemstra & Partners",
+      "companyURL": "https://hooghiemstra-en-partners.nl",
+      "url": "mailto:mariette@hooghiemstra-en-partners.nl"
+    },
+    {
+      "name": "Steven Gort",
+      "mailto": "steven.gort@ictu.nl",
+      "company": "ICTU",
+      "companyURL": "http://www.ictu.nl",
+      "url": "mailto:steven.gort@ictu.nl"
     }
   ],
   "authors": [
     {
-      "name": "Logius Standaarden",
-      "company": "Logius",
-      "companyURL": "https://github.com/Logius-standaarden"
+      "name": "Anouschka Ausems",
+      "url": "https://belastingdienst.nl"
+    },
+    {
+      "name": "John Bulles",
+      "url": "https://pna-group.com/"
+    },
+    {
+      "name": "Mariette Lokin",
+      "url": "https://hooghiemstra-en-partners.nl"
     }
   ],
-  "github": "https://github.com/Logius-standaarden/ReSpec-template",
+  "github": "https://github.com/MinBZK/wetsanalyse/",
   "alternateFormats": [
     {
       "label": "pdf",
-      "uri": "template.pdf"
+      "uri": "Wetsanalyse.pdf"
     }
   ]
 }</script>
@@ -332,97 +335,462 @@ ul.index code{color:inherit}
 
 <body class="h-entry toc-inline"><div class="head">
     <a class="logo" href="https://www.logius.nl/standaarden"><img alt="Logius" height="77" id="Logius" src="https://gitdocumentatie.logius.nl/publicatie/respec/style/logos/figure-logius.svg" width="44">
-  </a> <h1 id="title" class="title">titleText 0.0.3</h1>
-    
+  </a> <h1 id="title" class="title">Specificatie van het juridisch referentiemodel (JRM) 1.0.0</h1>
+    <h2 id="subtitle" class="subtitle">Specificatie van het juridisch referentiemodel (JRM) dat met scenario's beschrijft hoe een burger of bedrijf een bepaald stuk wet- en regelgeving ervaart of doorloopt in de wetsuitvoering.</h2>
     <h2>
-      Logius Handreiking<br>
+      MinBZK Informatiemodel<br>
       Vastgestelde versie
-      <time class="dt-published" datetime="2023-06-21">21 juni 2023</time>
+      <time class="dt-published" datetime="2024-10-15">15 oktober 2024</time>
     </h2>
     <dl>
       <dt>Deze versie:</dt><dd class="status">
-              <a class="u-url status" href="https://gitdocumentatie.logius.nl/publicatie/dk/def-hr-template-20230621">https://gitdocumentatie.logius.nl/publicatie/dk/def-hr-template-20230621</a>
+              <a class="u-url status" href="https://regels.overheid.nl/publicaties/wetgeving/v1.0.0">https://regels.overheid.nl/publicaties/wetgeving/v1.0.0</a>
             </dd>
       <dt>Laatst gepubliceerde versie:</dt><dd>
-              <a href="https://gitdocumentatie.logius.nl/publicatie/dk/template">https://gitdocumentatie.logius.nl/publicatie/dk/template</a>
+              <a href="https://regels.overheid.nl/publicaties/wetgeving">https://regels.overheid.nl/publicaties/wetgeving</a>
             </dd>
-      <dt>Laatste werkversie:</dt><dd><a href="https://logius-standaarden.github.io/ReSpec-template/">https://logius-standaarden.github.io/ReSpec-template/</a></dd>
+      <dt>Laatste werkversie:</dt><dd><a href="https://minbzk.github.io/wetsanalyse/">https://minbzk.github.io/wetsanalyse/</a></dd>
       
       
       
-      <dt>Vorige versie:</dt><dd><a href="https://gitdocumentatie.logius.nl/publicatie/dk/wv-hr-template-20220624">https://gitdocumentatie.logius.nl/publicatie/dk/wv-hr-template-20220624</a></dd>
       
-      <dt>Redacteur:</dt>
+      
+      <dt>Redacteurs:</dt>
       <dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Logius Standaarden</span> (<a class="p-org org h-org" href="https://github.com/Logius-standaarden">Logius</a>)
+    <a class="ed_mailto u-email email p-name" href="mailto:mariette@hooghiemstra-en-partners.nl">Mariette Lokin</a> (<a class="p-org org h-org" href="https://hooghiemstra-en-partners.nl">Hooghiemstra &amp; Partners</a>)
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="ed_mailto u-email email p-name" href="mailto:steven.gort@ictu.nl">Steven Gort</a> (<a class="p-org org h-org" href="http://www.ictu.nl">ICTU</a>)
   </dd>
       
-      <dt>Auteur:</dt><dd class="editor p-author h-card vcard">
-    <span class="p-name fn">Logius Standaarden</span> (<a class="p-org org h-org" href="https://github.com/Logius-standaarden">Logius</a>)
+      <dt>Auteurs:</dt><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://belastingdienst.nl">Anouschka Ausems</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://pna-group.com/">John Bulles</a>
+  </dd><dd class="editor p-author h-card vcard">
+    <a class="u-url url p-name fn" href="https://hooghiemstra-en-partners.nl">Mariette Lokin</a>
   </dd>
       <dt>Doe mee:</dt><dd>
-    <a href="https://github.com/Logius-standaarden/ReSpec-template/">GitHub Logius-standaarden/ReSpec-template</a>
+    <a href="https://github.com/MinBZK/wetsanalyse/">GitHub MinBZK/wetsanalyse</a>
   </dd><dd>
-    <a href="https://github.com/Logius-standaarden/ReSpec-template/issues/">Dien een melding in</a>
+    <a href="https://github.com/MinBZK/wetsanalyse/issues/">Dien een melding in</a>
   </dd><dd>
-    <a href="https://github.com/Logius-standaarden/ReSpec-template/commits/">Revisiehistorie</a>
+    <a href="https://github.com/MinBZK/wetsanalyse/commits/">Revisiehistorie</a>
   </dd><dd>
-    <a href="https://github.com/Logius-standaarden/ReSpec-template/pulls/">Pull requests</a>
+    <a href="https://github.com/MinBZK/wetsanalyse/pulls/">Pull requests</a>
   </dd>
     </dl>
     
     
     <p>
           Dit document is ook beschikbaar in dit niet-normatieve formaat:
-          <a rel="alternate" href="template.pdf">pdf</a>
+          <a rel="alternate" href="Wetsanalyse.pdf">pdf</a>
         </p>
     <p class="copyright">
           Dit document valt onder de volgende licentie: 
-          <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode" class="subfoot"><img class="license" src="https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-by.svg" alt="Logo Creative Commons Attribution 4.0 International Public License"><br> Creative Commons Attribution 4.0 International Public License</a>
+          <a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/" class="subfoot"><img class="license" src="https://gitdocumentatie.logius.nl/publicatie/respec/media/logos/cc-zero.svg" alt="Logo Creative Commons 0 Public Domain Dedication"><br> Creative Commons 0 Public Domain Dedication</a>
         </p>
     <hr title="Separator for header">
   </div>
-  <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Tekst</p>
-</section>
-  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</a></li><li class="tocline"><a class="tocxref" href="#meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#definities"><bdi class="secno">2.1 </bdi>Definities</a></li><li class="tocline"><a class="tocxref" href="#afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</a></li><li class="tocline"><a class="tocxref" href="#referenties"><bdi class="secno">2.3 </bdi>Referenties</a></li><li class="tocline"><a class="tocxref" href="#optioneel"><bdi class="secno">2.4 </bdi>Optioneel</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="niet-normatieve-deel"><div class="header-wrapper"><h2 id="x1-niet-normatieve-deel"><bdi class="secno">1. </bdi>Niet-normatieve deel</h2><a class="self-link" href="#niet-normatieve-deel" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
-<p>Bijvoorbeeld een introductie.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: index</span></div><p class="">
-Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config.js</code>.
-</p></div></section><section id="meer-inhoud"><div class="header-wrapper"><h2 id="x2-meer-inhoud"><bdi class="secno">2. </bdi>Meer inhoud</h2><a class="self-link" href="#meer-inhoud" aria-label="Permalink for Section 2."></a></div>
-<section id="definities"><div class="header-wrapper"><h3 id="x2-1-definities"><bdi class="secno">2.1 </bdi>Definities</h3><a class="self-link" href="#definities" aria-label="Permalink for Section 2.1"></a></div>
-<p><dfn id="dfn-definitie" tabindex="0" aria-haspopup="dialog">Definitie</dfn>: Een definitie is een beschrijving van een woord. Een ander woord voor definitie is betekenis of beschrijving.</p>
-</section><section id="afbeeldingen"><div class="header-wrapper"><h3 id="x2-2-afbeeldingen"><bdi class="secno">2.2 </bdi>Afbeeldingen</h3><a class="self-link" href="#afbeeldingen" aria-label="Permalink for Section 2.2"></a></div>
-<p>Afbeeldingen krijgen een nummer en vermelding in de figurenlijst <a href="#tof" data-matched-text="[[[#tof]]]" class="sec-ref"><bdi class="secno">5. </bdi>Lijst met figuren</a>.</p>
+  <section id="abstract" class="introductory"><h2>Samenvatting</h2>
+<p>Deze <strong>Wetsanalyse specificatie</strong> beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.</p>
+<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Boek</span></div><p class="">
+Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het boek Wetsanalyse, Voor een werkbare uitvoering van wetgeving met ICT, van de auteur(s): Anouschka Ausems, John Bulles en Mariette Lokin.<br>
+<br>
+<a href="https://www.boomdenhaag.nl/webshop/wetsanalyse">Dit boek</a> wordt uitgeven door Boom uitgevers Den Haag.
+</p></div></section>
+  <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is de definitieve versie van dit document. Wijzigingen naar aanleiding van consultaties zijn doorgevoerd.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#inleiding"><bdi class="secno">1. </bdi>Inleiding</a></li><li class="tocline"><a class="tocxref" href="#jas"><bdi class="secno">2. </bdi>JAS</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#juridisch-analyschema"><bdi class="secno">2.1 </bdi>Juridisch Analyschema</a></li><li class="tocline"><a class="tocxref" href="#elementen-uit-het-jas"><bdi class="secno">2.2 </bdi>Elementen uit het JAS</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#rechtssubject"><bdi class="secno">2.2.1 </bdi>Rechtssubject</a></li><li class="tocline"><a class="tocxref" href="#rechtsobject"><bdi class="secno">2.2.2 </bdi>Rechtsobject</a></li><li class="tocline"><a class="tocxref" href="#rechtsbetrekking"><bdi class="secno">2.2.3 </bdi>Rechtsbetrekking</a></li><li class="tocline"><a class="tocxref" href="#rechtsfeit"><bdi class="secno">2.2.4 </bdi>Rechtsfeit</a></li><li class="tocline"><a class="tocxref" href="#voorwaarde"><bdi class="secno">2.2.5 </bdi>Voorwaarde</a></li><li class="tocline"><a class="tocxref" href="#afleidingsregel"><bdi class="secno">2.2.6 </bdi>Afleidingsregel</a></li><li class="tocline"><a class="tocxref" href="#variabele-waarde"><bdi class="secno">2.2.7 </bdi>Variabele(waarde)</a></li><li class="tocline"><a class="tocxref" href="#parameter-waarde"><bdi class="secno">2.2.8 </bdi>Parameter(waarde)</a></li><li class="tocline"><a class="tocxref" href="#operator"><bdi class="secno">2.2.9 </bdi>Operator</a></li><li class="tocline"><a class="tocxref" href="#tijdsaanduiding"><bdi class="secno">2.2.10 </bdi>Tijdsaanduiding</a></li><li class="tocline"><a class="tocxref" href="#plaatsaanduiding"><bdi class="secno">2.2.11 </bdi>Plaatsaanduiding</a></li><li class="tocline"><a class="tocxref" href="#delegatiebevoegdheid-invulling"><bdi class="secno">2.2.12 </bdi>Delegatiebevoegdheid/-invulling</a></li><li class="tocline"><a class="tocxref" href="#brondefinitie"><bdi class="secno">2.2.13 </bdi>Brondefinitie</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#begrippenkader"><bdi class="secno">3. </bdi>Begrippenkader</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#begrippenlijst"><bdi class="secno">3.1 </bdi>Begrippenlijst</a></li><li class="tocline"><a class="tocxref" href="#taxonomie"><bdi class="secno">3.2 </bdi>Taxonomie</a></li></ol></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#tof"><bdi class="secno">5. </bdi>Lijst met figuren</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>Referenties</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</a></li><li class="tocline"><a class="tocxref" href="#informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</a></li></ol></li></ol></nav><section class="informative" id="inleiding"><div class="header-wrapper"><h2 id="x1-inleiding"><bdi class="secno">1. </bdi>Inleiding</h2><a class="self-link" href="#inleiding" aria-label="Permalink for Section 1."></a></div><p><em>Dit onderdeel is niet normatief.</em></p>
+<p>Een goede vertaling van wetgeving naar de uitvoeringspraktijk vraagt om een aanpak waarbij alle stappen voor het interpreteren, preciseren en nader invullen van wetgeving expliciet en op een gestructureerde manier worden vastgelegd. Dat zorgt ervoor dat de keuzes die worden gemaakt bij het vertalen van wetgeving naar uitvoering helder zijn en dat besluiten die op grond van die keuzes worden gemaakt, uit te leggen en te verantwoorden zijn. Een ander voordeel van zo’n aanpak is dat bij wijziging van de wetgeving gemakkelijker te bepalen is welke aanpassingen nodig zijn in de ICT-systemen. Dat maakt uitvoeringsorganisaties wendbaarder bij de implementatie van wetgeving.</p>
+<p>Wetsanalyse is een aanpak die dit ondersteunt; de beschrijving en toepassing ervan staan in het boek Wetsanalyse centraal. Het boek bestaat uit twee delen. Het eerste deel behandelt de theorie van Wetsanalyse. Om de context te schetsen wordt in hoofdstuk 2 ingegaan op de karakteristieken van wetgeving die maken dat (het inrichten van) de uitvoering vaak bewerkelijk is. Vervolgens worden in hoofdstuk 3 de verschillende stappen in de aanpak van Wetsanalyse beschreven.</p>
+<p>Hoofdstuk 4 behandelt het juridisch analyseschema dat hét onderwerp is van deze specificatie en dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.</p>
+<p>Hoofdstuk 5 gaat in op de multidisciplinaire samenwerking tussen juristen, informatieanalisten en ICT-ontwikkelaars die essentieel is voor een optimaal resultaat van Wetsanalyse. Zij voeren aan de hand van concrete voorbeelden en scenario’s steeds samen het gesprek over de uitkomsten van de analyse en de interpretatie die daarbij aan de wetgeving is gegeven. Dit is van groot belang voor de kwaliteit van de analyse en daarmee voor de juistheid van de uiteindelijke uitvoering van de wetgeving.</p>
+</section><section id="jas"><div class="header-wrapper"><h2 id="x2-jas"><bdi class="secno">2. </bdi>JAS</h2><a class="self-link" href="#jas" aria-label="Permalink for Section 2."></a></div>
+<section id="juridisch-analyschema"><div class="header-wrapper"><h3 id="x2-1-juridisch-analyschema"><bdi class="secno">2.1 </bdi>Juridisch Analyschema</h3><a class="self-link" href="#juridisch-analyschema" aria-label="Permalink for Section 2.1"></a></div>
+<p>Het juridisch analyseschema bevat de juridische elementen in wetgeving, met nog enige verfijningen daarin. Het werk van de Amerikaanse jurist Wesley Newcomb Hohfeld [<cite><a class="bibref" data-link-type="biblio" href="#bib-hohfeld_1" title="Some Fundamental Conceptions as Applied in Judicial Reasoning">HOHFELD_1</a></cite>] vormt een belangrijke basis voor het analyseschema. Hij beschreef al in het begin van de twintigste eeuw verschillende soorten rechten en plichten, op basis van Amerikaanse jurisprudentie [<cite><a class="bibref" data-link-type="biblio" href="#bib-hohfeld_2" title="Fundamental Legal Conceptions as Applied in Judicial Reasoning">HOHFELD_2</a></cite>].</p>
+<p>Vanaf 2012 heeft het samenwerkingsverband de Blauwe Kamer op basis van het werk van Hohfeld een referentiemodel voor wetgeving ontwikkeld [<cite><a class="bibref" data-link-type="biblio" href="#bib-blkamer" title="Een kapstok voor herleidbare wet- en regelgeving voor dienstverlening">BLKAMER</a></cite>]. Dit referentiemodel is op zijn beurt weer de basis geweest voor het hier gespecificeerde juridisch analyseschema.</p>
 <p>
-      </p><figure id="fig-onderschrift">
-        <img src="media/Bomos_levenscyclus.svg" alt="Tekstueel alternatief voor toegankelijkheid">
-        <figcaption><a class="self-link" href="#fig-onderschrift">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Onderschrift</span></figcaption>
+      </p><figure id="fig-juridisch-analyseschema">
+        <img src="./media/analyseschema.png" alt="Juridisch analyseschema">
+        <figcaption><a class="self-link" href="#fig-juridisch-analyseschema">Figuur <bdi class="figno">1</bdi></a> <span class="fig-title">Juridisch Analyseschema</span></figcaption>
       </figure>
     <p></p>
-</section><section id="referenties"><div class="header-wrapper"><h3 id="x2-3-referenties"><bdi class="secno">2.3 </bdi>Referenties</h3><a class="self-link" href="#referenties" aria-label="Permalink for Section 2.3"></a></div>
-<p>Referentie uit locale lijst [<cite><a class="bibref" data-link-type="biblio" href="#bib-semver" title="Semantic Versioning 2.0.0">SemVer</a></cite>]. Lijst staat in <code>organisation-config.js</code>. Alleen referenties die in de tekst voorkomen worden getoond.</p>
-<p>We gebruiken een <a href="#dfn-definitie" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-definitie-1">definitie</a> om een woord te omschrijven.</p>
-</section><section id="optioneel"><div class="header-wrapper"><h3 id="x2-4-optioneel"><bdi class="secno">2.4 </bdi>Optioneel</h3><a class="self-link" href="#optioneel" aria-label="Permalink for Section 2.4"></a></div>
-<p>De onderstaande secties (<em>Conformiteit</em> e.d.) zijn optioneel, zie <code>index.html</code>:</p>
-<pre><code aria-busy="false" class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"abstract"</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"abstract.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"sotd"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span><span class="hljs-comment">&lt;!-- Wordt automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"informative"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch01.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-include-format</span>=<span class="hljs-string">"markdown"</span> <span class="hljs-attr">data-include</span>=<span class="hljs-string">"ch02.md"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-comment">&lt;!-- Hieronder optionele secties. Worden automatisch gevuld --&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'conformance'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">'tof'</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"index"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
-</code></pre>
-</section></section><section id="mermaid-diagram"><div class="header-wrapper"><h2 id="x3-mermaid-diagram"><bdi class="secno">3. </bdi>Mermaid diagram</h2><a class="self-link" href="#mermaid-diagram" aria-label="Permalink for Section 3."></a></div>
-<figure id="fig-mermaid-voorbeeld">
-
-<pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="max-width: 128.234375px;" viewBox="0 0 128.234375 230"><style>
-#diagram-1 {font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}#diagram-1 .error-icon{fill:#552222;}#diagram-1 .error-text{fill:#552222;stroke:#552222;}#diagram-1 .edge-thickness-normal{stroke-width:2px;}#diagram-1 .edge-thickness-thick{stroke-width:3.5px;}#diagram-1 .edge-pattern-solid{stroke-dasharray:0;}#diagram-1 .edge-pattern-dashed{stroke-dasharray:3;}#diagram-1 .edge-pattern-dotted{stroke-dasharray:2;}#diagram-1 .marker{fill:#333333;stroke:#333333;}#diagram-1 .marker.cross{stroke:#333333;}#diagram-1 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#diagram-1 .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#diagram-1 .cluster-label text{fill:#333;}#diagram-1 .cluster-label span{color:#333;}#diagram-1 .label text,#diagram-1 span{fill:#333;color:#333;}#diagram-1 .node rect,#diagram-1 .node circle,#diagram-1 .node ellipse,#diagram-1 .node polygon,#diagram-1 .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#diagram-1 .node .label{text-align:center;}#diagram-1 .node.clickable{cursor:pointer;}#diagram-1 .arrowheadPath{fill:#333333;}#diagram-1 .edgePath .path{stroke:#333333;stroke-width:2.0px;}#diagram-1 .flowchart-link{stroke:#333333;fill:none;}#diagram-1 .edgeLabel{background-color:#e8e8e8;text-align:center;}#diagram-1 .edgeLabel rect{opacity:0.5;background-color:#e8e8e8;fill:#e8e8e8;}#diagram-1 .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#diagram-1 .cluster text{fill:#333;}#diagram-1 .cluster span{color:#333;}#diagram-1 div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#diagram-1 :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}
-</style><g><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath LS-A LE-B" id="L-A-B" style="opacity: 1;"><path class="path" d="M48.55859375,43.637195415583165L44.354817708333336,48.197662846319304C40.151041666666664,52.75813027705544,31.743489583333332,61.87906513852772,27.539713541666668,70.60619923593053C23.3359375,79.33333333333333,23.3359375,87.66666666666667,23.3359375,91.83333333333333L23.3359375,96" marker-end="url(#arrowhead14)" style="fill:none"></path><defs><marker id="arrowhead14" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-A LE-C" id="L-A-C" style="opacity: 1;"><path class="path" d="M79.23046875,43.637195415583165L83.43424479166667,48.197662846319304C87.63802083333333,52.75813027705544,96.04557291666667,61.87906513852772,100.24934895833333,70.60619923593053C104.453125,79.33333333333333,104.453125,87.66666666666667,104.453125,91.83333333333333L104.453125,96" marker-end="url(#arrowhead15)" style="fill:none"></path><defs><marker id="arrowhead15" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-B LE-D" id="L-B-D" style="opacity: 1;"><path class="path" d="M23.3359375,134L23.3359375,138.16666666666666C23.3359375,142.33333333333334,23.3359375,150.66666666666666,27.465494791666668,159.31328453561912C31.595052083333332,167.95990240457158,39.854166666666664,176.91980480914313,43.983723958333336,181.39975601142896L48.11328125,185.87970721371474" marker-end="url(#arrowhead16)" style="fill:none"></path><defs><marker id="arrowhead16" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath LS-C LE-D" id="L-C-D" style="opacity: 1;"><path class="path" d="M104.453125,134L104.453125,138.16666666666666C104.453125,142.33333333333334,104.453125,150.66666666666666,100.32356770833333,159.31328453561912C96.19401041666667,167.95990240457158,87.93489583333333,176.91980480914313,83.80533854166667,181.39975601142896L79.67578125,185.87970721371474" marker-end="url(#arrowhead17)" style="fill:none"></path><defs><marker id="arrowhead17" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-B" class="edgeLabel L-LS-A' L-LE-B"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-A-C" class="edgeLabel L-LS-A' L-LE-C"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-B-D" class="edgeLabel L-LS-B' L-LE-D"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><rect rx="0" ry="0" width="0" height="0"></rect><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span id="L-L-C-D" class="edgeLabel L-LS-C' L-LE-D"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="flowchart-A-8" transform="translate(63.89453125,27)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-19" width="30.671875" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-9)"><foreignObject width="10.671875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">A</div></foreignObject></g></g></g><g class="node default" id="flowchart-B-9" transform="translate(23.3359375,115)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.3359375" y="-19" width="30.671875" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.3359375,-9)"><foreignObject width="10.671875" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">B</div></foreignObject></g></g></g><g class="node default" id="flowchart-C-11" transform="translate(104.453125,115)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-19" width="31.5625" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-9)"><foreignObject width="11.5625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">C</div></foreignObject></g></g></g><g class="node default" id="flowchart-D-13" transform="translate(63.89453125,203)" style="opacity: 1;"><rect rx="0" ry="0" x="-15.78125" y="-19" width="31.5625" height="38" class="label-container"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-5.78125,-9)"><foreignObject width="11.5625" height="18"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">D</div></foreignObject></g></g></g></g></g></g></svg></pre>
-<figcaption><a class="self-link" href="#fig-mermaid-voorbeeld">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Mermaid voorbeeld</span></figcaption>
-</figure></section>
+<p>In bovenstaande figuur zien we de verschillende klassen van het juridische analyse schema terugkomen als gekleurde blokjes. De gebruikte kleuren passen we toe in de voorbeelden van classificaties. Verder staan tussen de blokjes lijnen. Deze lijnen geven aan dat tussen twee blokjes een of meer relaties bestaan. We hebben vanuit het oogpunt van overzichtelijkheid niet alle lijnen weergegeven.</p>
+</section><section id="elementen-uit-het-jas"><div class="header-wrapper"><h3 id="x2-2-elementen-uit-het-jas"><bdi class="secno">2.2 </bdi>Elementen uit het JAS</h3><a class="self-link" href="#elementen-uit-het-jas" aria-label="Permalink for Section 2.2"></a></div>
+<p>In onderstaande tabel zijn de omschrijvingen van alle elementen uit het juridisch analyseschema opgenomen.</p>
+<p>
+      </p><figure id="fig-tabel-juridisch-analyseschema">
+        <img src="./media/wa-table.png" alt="Tabel juridisch analyseschema">
+        <figcaption><a class="self-link" href="#fig-tabel-juridisch-analyseschema">Figuur <bdi class="figno">2</bdi></a> <span class="fig-title">Tabel juridisch analyseschema</span></figcaption>
+      </figure>
+    <p></p>
+<p>Om een klasse te kunnen herkennen in een wettekst helpt het om gebruik te maken van een of meer vragen die vergelijkbaar zijn met de vragen die gesteld worden bij zinsontleding in de grammatica. Deze vragen benoemen we per klasse en we besteden ook aandacht aan de uitdrukkingswijze in de wetgeving.</p>
+<section id="rechtssubject"><div class="header-wrapper"><h4 id="x2-2-1-rechtssubject"><bdi class="secno">2.2.1 </bdi>Rechtssubject</h4><a class="self-link" href="#rechtssubject" aria-label="Permalink for Section 2.2.1"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-rechtssubject" tabindex="0" aria-haspopup="dialog">Rechtssubject</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een rechtssubject is de drager van rechten en plichten. Het is een partij in een rechtsbetrekking.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van een rechtssubject kunnen zijn: Wie heeft het recht? Wie heeft de plicht? Van wie is een rechtsobject? Bij wie hoort een waarde?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een rechtssubject is te herkennen aan een zelfstandig naamwoord waarmee een persoon of andere entiteit wordt beschreven, of aan een persoonlijk voornaamwoord zoals ‘hij’, ‘zij’ en soms ook ‘het’. Maar ook een onbepaald of betrekkelijk voornaamwoord kan wijzen op een rechtssubject, bijvoorbeeld ‘iemand’, ‘een ieder’ of ‘degene’.</td>
+</tr>
+</tbody></table>
+</section><section id="rechtsobject"><div class="header-wrapper"><h4 id="x2-2-2-rechtsobject"><bdi class="secno">2.2.2 </bdi>Rechtsobject</h4><a class="self-link" href="#rechtsobject" aria-label="Permalink for Section 2.2.2"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-rechtsobject" tabindex="0" aria-haspopup="dialog">Rechtsobject</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een rechtsobject is het voorwerp van een rechtsbetrekking en/of rechtsfeit. Een rechtsobject kan zowel een fysieke (bijvoorbeeld een personenauto of een huis) als een niet-fysieke verschijningsvorm (bijvoorbeeld medische zorg) hebben.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van een rechtsobject kunnen zijn: Wat is het voorwerp van een recht of plicht? Waar is het rechtssubject eigenaar of houder van? Waar heeft een waarde betrekking op? Waarover is iets verschuldigd?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een rechtsobject is te herkennen aan een zelfstandig naamwoord waarmee het voorwerp van een recht of plicht wordt omschreven, bijvoorbeeld een studie, een woning of een dienstbetrekking. Ook een aanwijzend of betrekkelijk voornaamwoord kan wijzen op een rechtsobject, bijvoorbeeld ‘dat’, ‘hetgeen’ en ‘welk(e)’.</td>
+</tr>
+</tbody></table>
+</section><section id="rechtsbetrekking"><div class="header-wrapper"><h4 id="x2-2-3-rechtsbetrekking"><bdi class="secno">2.2.3 </bdi>Rechtsbetrekking</h4><a class="self-link" href="#rechtsbetrekking" aria-label="Permalink for Section 2.2.3"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-rechtsbetrekking" tabindex="0" aria-haspopup="dialog">Rechtsbetrekking</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een rechtsbetrekking is een juridische relatie tussen twee rechtssubjecten en beschrijft een specifieke juridische toestand tussen deze rechtssubjecten. Een van deze rechtssubjecten heeft een plicht en de ander het bijbehorend recht. De algemene juridische toestand van een rechtssubject is de verzameling van alle specifieke rechtsbetrekkingen waarin dit rechtssubject als rechthebbende of plichthebbende partij optreedt.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van een rechtsbetrekking kunnen zijn: Hoe verhouden twee rechtssubjecten zich tot elkaar? Welke relatie(s) hebben twee rechtssubjecten met elkaar?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een rechtsbetrekking is te herkennen aan een of meer werkwoorden. Bijvoorbeeld in de vorm van een combinatie van een hoofdwerkwoord met een hulpwerkwoord:<ol type="i"><li>bij een recht: ‘kan verzoeken’ of ‘mag wijzigen’;</li><li> bij een plicht: ‘stelt vast’, ‘mag niet inhalen’, ‘is verplicht informatie te verstrekken’, ‘moet informeren’ of ‘dient te voldoen’.</li></ol><br>Daarnaast is een rechtsbetrekking bijvoorbeeld te herkennen aan een samengesteld werkwoord:<ol type="i"><li>bij een recht: ‘heeft recht op’ of ‘heeft aanspraak op’;</li><li>bij een plicht: ‘heeft de plicht om’ of ‘draagt de last om’.</li></ol></td>
+</tr>
+</tbody></table>
+</section><section id="rechtsfeit"><div class="header-wrapper"><h4 id="x2-2-4-rechtsfeit"><bdi class="secno">2.2.4 </bdi>Rechtsfeit</h4><a class="self-link" href="#rechtsfeit" aria-label="Permalink for Section 2.2.4"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-rechtsfeit" tabindex="0" aria-haspopup="dialog">Rechtsfeit</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een rechtsfeit is een handeling of gebeurtenis die, of tijdsverloop dat een wijziging in de juridische toestand teweegbrengt. Aan een rechtsfeit zijn dus rechtsgevolgen verbonden die een rechtsbetrekking creëren, wijzigen of beëindigen.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Een vraag voor het vinden van een rechtsfeit kan zijn: Wat is de gebeurtenis of handeling die, of het tijdsverloop dat gevolgen heeft voor de rechtsbetrekking?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een rechtsfeit is te herkennen aan een actieve werkwoordsvorm, al dan niet in combinatie met een zelfstandig naamwoord, zoals ‘indienen van een bezwaarschrift’, ‘toekennen van een subsidie’, ‘horen van belanghebbende’ of ‘kenbaar maken van elektronische bereikbaarheid’.</td>
+</tr>
+</tbody></table>
+</section><section id="voorwaarde"><div class="header-wrapper"><h4 id="x2-2-5-voorwaarde"><bdi class="secno">2.2.5 </bdi>Voorwaarde</h4><a class="self-link" href="#voorwaarde" aria-label="Permalink for Section 2.2.5"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-voorwaarde" tabindex="0" aria-haspopup="dialog">Voorwaarde</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een voorwaarde is een conditie die beschrijft aan welke omstandigheid voldaan moet zijn voor het intreden van een rechtsgevolg. Een voor waarde kan ook betrekking hebben op een rechtssubject of op een waarde die bij een rechtsobject of bij een afleidingsregel hoort. Een voorwaarde bevat vaste elementen, die in de logica operanden en operatoren worden genoemd. Operanden kunnen rechtssubjecten of rechtsobjecten, eigenschappen van rechtssubjecten of rechtsobjecten, berekeningen of waarden zijn. Een operator is de beschrijving van een vergelijking die in de voorwaarde voorkomt, zoals ‘groter dan’, ‘kleiner dan’ en ‘gelijk aan’.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van een voorwaarde kunnen zijn: Welke eisen worden gesteld aan een rechtssubject, een rechtsobject, een rechtsbetrekking of een rechtsfeit? Onder welke omstandigheden geldt een waarde bij een rechtsobject?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een voorwaarde is te herkennen aan een voorwaardelijke bijzin, in de meeste gevallen ingeleid door een voegwoord zoals ‘indien’, ‘als’, ‘tenzij’, ‘mits’ of een combinatie van woorden, zoals ‘met dien verstande dat’ of ‘met uitzondering van’. Ook kan een voorwaarde afgeleid worden uit een bijwoord bij een werkwoord, zoals ‘schriftelijk’ of ‘elektronisch’. Voorwaarden kunnen enkelvoudig of samengesteld zijn. Een samengestelde voorwaarde bestaat uit verschillende eisen die alle vervuld moeten zijn (cumulatief) of waarvan er één vervuld moet zijn (alternatief).</td>
+</tr>
+</tbody></table>
+</section><section id="afleidingsregel"><div class="header-wrapper"><h4 id="x2-2-6-afleidingsregel"><bdi class="secno">2.2.6 </bdi>Afleidingsregel</h4><a class="self-link" href="#afleidingsregel" aria-label="Permalink for Section 2.2.6"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-afleidingsregel" tabindex="0" aria-haspopup="dialog">Afleidingsregel</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een afleidingsregel is een regel die nieuwe feiten of waarden creëert met behulp van bestaande feiten of waarden. Te denken valt aan regels die bepalen of een recht bestaat (een beslisregel), of die de hoogte en duur van een recht bepalen (een rekenregel). De variabele die vastgesteld wordt door de afleidingsregels, noemen we uitvoervariabele. Bij een rekenregel is dit de uitkomst van de rekensom. Bij een beslisregel is dit een conclusie als ja/nee, of waar/onwaar. De variabelen die gebruikt worden voor de vaststelling, noemen we invoervariabelen. In geval van een rekenregel zijn dit in feite de getallen waarmee wordt gerekend. Als sprake is van vaste getallen of waarden in een afleidingsregel die over een periode gelijk zijn voor alle rechtssubjecten en rechtsobjecten, noemen we deze parameters.<br>Afleidingsregels worden ook gebruikt om te bepalen of een rechtssubject of rechtsobject tot een bepaalde doelgroep behoort; het gaat dan om het afleiden van specialisaties van rechtssubjecten en rechtsobjecten op basis van bepaalde kenmerken.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van een afleidingsregel kunnen zijn: Hoe wordt een variabele berekend of afgeleid? Hoe wordt een specifiek rechtssubject of rechtsobject bepaald?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een afleidingsregel is te herkennen aan woorden die duiden op een berekening of afleiding, zoals ‘is (…) verminderd met’, ‘bedraagt (…) vermeerderd met’, ‘wordt gesteld op’ of ‘is het gezamenlijke bedrag van’, maar ook eenvoudigweg ‘en’.</td>
+</tr>
+</tbody></table>
+</section><section id="variabele-waarde"><div class="header-wrapper"><h4 id="x2-2-7-variabele-waarde"><bdi class="secno">2.2.7 </bdi>Variabele(waarde)</h4><a class="self-link" href="#variabele-waarde" aria-label="Permalink for Section 2.2.7"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-variabele" tabindex="0" aria-haspopup="dialog">Variabele</dfn> en <dfn id="dfn-variabelewaarde" tabindex="0" aria-haspopup="dialog">Variabelewaarde</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een <em>variabele</em> is een kenmerk van een rechtssubject, rechtsobject, rechtsbetrekking of rechtsfeit dat voor verschillende instanties daarvan (dus voor specifieke personen, zaken, relaties, handelingen of gebeurtenissen in de werkelijkheid) een andere waarde kan hebben. Een <em>variabelewaarde</em> geeft de waarde aan die een bepaalde variabele kan hebben. De wijze waarop een variabelewaarde is omschreven in wetgeving kan een beperking in de mogelijke waarden voor een variabele inhouden, of een voorwaarde aan een variabele stellen. Variabele en variabelewaarde zijn verschillende klassen, maar vanwege de nauwe samenhang beschouwen we ze hier tezamen.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van een variabele kunnen zijn: Wat zijn de specifieke kenmerken van een rechtsobject, rechtssubject, rechtsbetrekking of rechtsfeit? Welke eigenschappen worden genoemd? Welke waarde heeft een rechtsobject? Hoe lang of hoe hoog is een rechtsobject? Een variabelewaarde kan worden gedetecteerd met vragen als: Welk bedrag, welke duur of welke hoogte hoort bij deze variabele?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>De volgende varianten van een variabele met variabelewaarde kunnen we in elk geval herkennen in de wetgeving.<br><br>Een getal of datum:<br>Soms bevat de wetgeving termen die een omvang, duur of andere grootheid tot uitdrukking brengen, zoals een bedrag, een datum of een aantal dagen. Dan is een variabelewaarde te herkennen aan een concreet bedrag, een concrete datum, een concrete tijdsduur of een andere numerieke waarde.<br><br>Een tekst:<br>Een variabele kan een variabelewaarde hebben die bestaat uit een tekst. Een voorbeeld van zo’n variabele is ‘naam van een werkgever’.<br><br>Een enumeratiewaarde:<br>Soms bevat de wetgeving een limitatieve opsomming van de mogelijke waarden van een variabele. Deze limitatieve opsomming van variabelewaarden wordt in de logica geduid met de term enumeratiewaarde. Enumeratiewaarden kunnen bijvoorbeeld in getallen of in tekst worden uitgedrukt.<br><br>Een booleaanse waarde:<br>Een bijzondere enumeratiewaarde in tekst is een booleaanse waarde. Deze heeft slechts twee mogelijke waarden, te weten ‘ja’ (waar) of ‘nee’ (onwaar). Hiermee kunnen we uitdrukken of een bepaald kenmerk van een rechtssubject, rechtsobject, rechtsbetrekking of rechtsfeit van toepassing of aanwezig is. Een voorbeeld van zo’n variabele is ‘geregistreerd in het donorregister’. De variabelewaarden zijn hier ‘ja’ of ‘nee’.</td>
+</tr>
+</tbody></table>
+</section><section id="parameter-waarde"><div class="header-wrapper"><h4 id="x2-2-8-parameter-waarde"><bdi class="secno">2.2.8 </bdi>Parameter(waarde)</h4><a class="self-link" href="#parameter-waarde" aria-label="Permalink for Section 2.2.8"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-parameter" tabindex="0" aria-haspopup="dialog">Parameter</dfn> en <dfn id="dfn-parameterwaarde" tabindex="0" aria-haspopup="dialog">Parameterwaarde</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een <em>parameter</em> is een beschrijving van een waarde die gelijk is voor alle rechtssubjecten, rechtsobjecten, rechtsbetrekkingen en rechtsfeiten. Vanwege de stabiele waarde wordt een parameter ook wel constante genoemd. Parameters worden gebruikt in afleidingsregels en voorwaarden. In de regel geldt een parameter voor een bepaalde periode, bijvoorbeeld een kalenderjaar, maar hij kan ook voor een onbepaalde duur gelden (bijvoorbeeld voor de hele geldigheidsduur van de wettelijke regel). De waarde die een parameter in de desbetreffende periode heeft, is een <em>parameterwaarde</em>. De parameter is dus de omschrijving van de waarde, en de parameterwaarde is de concrete waarde die daaraan is toegekend. Ook deze klassen beschouwen we tezamen vanwege de nauwe samenhang tussen beide.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Een vraag voor het vinden van een parameter of parameterwaarde kan zijn: Is sprake van een waarde die gedurende een periode een vaste hoogte heeft voor alle rechtssubjecten en rechtsobjecten?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een parameter heeft een vaste waarde over een periode. Een parameter is te herkennen aan een beschrijving van een waarde, bijvoorbeeld van een tarief, een (drempel)bedrag (eventueel met een maximum of een minimum) of een vrijstelling. Een parameterwaarde drukt de waarde van de parameter(beschrijving) uit over een periode. Een parameterwaarde is te herkennen aan bijvoorbeeld een bedrag in geld, een percentage en een datum.</td>
+</tr>
+</tbody></table>
+</section><section id="operator"><div class="header-wrapper"><h4 id="x2-2-9-operator"><bdi class="secno">2.2.9 </bdi>Operator</h4><a class="self-link" href="#operator" aria-label="Permalink for Section 2.2.9"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-operator" tabindex="0" aria-haspopup="dialog">Operator</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een operator is een woord, een combinatie van woorden of een teken dat een rekenkundige bewerking, een samengestelde voorwaarde, een gelijkstelling of een vergelijking van twee waarden of berekeningen uitdrukt. Een operator beschrijft hoe verschillende elementen van een berekening, voorwaarde of samengestelde voorwaarde met elkaar verbonden worden om tot een resultaat te leiden. Er zijn verschillende typen operatoren:<br><ol type="a"><li>rekenkundige operatoren: deze voeren een rekenkundige bewerking uit, zoals bijvoorbeeld optellen, aftrekken en vermenigvuldigen;</li><li>vergelijkingsoperatoren: deze vergelijken variabelen met elkaar of een variabele met een parameter (variabele is groter dan parameter of variabele is kleiner dan parameter);</li><li>logische operatoren: deze bepalen bij samengestelde voorwaarden of aan (tenminste) één van de voorwaarden moet worden voldaan (OF, disjunctie, alternatief) of aan alle voorwaarden (EN, conjunctie, cumulatief). Ook kan er sprake zijn van een voorwaarde waaraan niet voldaan mag zijn (NIET, negatie).</li></ol></td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van operatoren zijn: Hoe worden variabelen of parameters verbonden in een berekening? In welke verhouding staan voorwaarden tot elkaar? Welke vergelijking wordt in een voorwaarde gemaakt?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een rekenkundige operator is te herkennen aan formuleringen zoals ‘het gezamenlijke bedrag van’, ‘de som van’, ‘vermeerderd met’, ‘verminderd met’ of ‘percentage van’.<br>Een vergelijkingsoperator is te herkennen aan de woorden ‘groter dan’, ‘kleiner dan’, ‘meer bedraagt dan’ of ‘is gelijk aan’.<br>Een logische operator is te herkennen aan de woorden ‘en’, ‘of’, ‘niet’ of ‘ten minste’.</td>
+</tr>
+</tbody></table>
+</section><section id="tijdsaanduiding"><div class="header-wrapper"><h4 id="x2-2-10-tijdsaanduiding"><bdi class="secno">2.2.10 </bdi>Tijdsaanduiding</h4><a class="self-link" href="#tijdsaanduiding" aria-label="Permalink for Section 2.2.10"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-tijdsaanduiding" tabindex="0" aria-haspopup="dialog">Tijdsaanduiding</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een tijdsaanduiding is een omschrijving van een tijdstip of tijdvak. Een tijdsaanduiding is nodig om de geldigheid van een rechtsbetrekking te duiden, om een tijdsverloop met rechtsgevolg uit te drukken of als variabele bij een specifiek rechtssubject of rechtsobject. Ook kan een tijdsaanduiding (met name een tijdstip) een parameterwaarde zijn. Een voorbeeld is een peildatum die wordt vergeleken met een andere datum (als variabele) in een voorwaarde.<br>De tijdsaanduiding is als aparte klasse opgenomen, hoewel deze ook beschouwd zou kunnen worden als een verduidelijking van de klassen variabele of parameter. Gelet op het belang van de tijdsaanduiding voor het bepalen van de duur van een rechtsbetrekking of het tijdstip van een tijdsverloop met rechtsgevolgen, is tijdsaanduiding als aparte klasse opgenomen. Een formulering kan zowel tot de klasse tijdsaanduiding als tot de klasse parameter of variabele behoren. Als dat zich voordoet, kiezen we bij de analyse voor de meest specifieke klasse, dus de tijdsaanduiding.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van tijdsaanduidingen kunnen zijn: Wanneer, op welk moment? Sinds wanneer of tot wanneer, vanaf welk moment of tot welk moment?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Tijdsaanduidingen zijn te herkennen aan een concrete datum (bijvoorbeeld 1 september 2009), of aan een omschrijving die een datum beschrijft (de eerste maandag van de maand). Tijdvakken zijn vaak te herkennen aan woorden die een periode duiden, zoals jaar, maand, week en dag of specialisaties van dit soort woorden, zoals kalenderjaar.</td>
+</tr>
+</tbody></table>
+</section><section id="plaatsaanduiding"><div class="header-wrapper"><h4 id="x2-2-11-plaatsaanduiding"><bdi class="secno">2.2.11 </bdi>Plaatsaanduiding</h4><a class="self-link" href="#plaatsaanduiding" aria-label="Permalink for Section 2.2.11"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-plaatsaanduiding" tabindex="0" aria-haspopup="dialog">Plaatsaanduiding</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een plaatsaanduiding is een plaats of een gebied waar bepaalde wetgeving betrekking op heeft. Zij bepaalt het toepassingsbereik van de regels voor rechtssubjecten, rechtsobjecten, rechtsbetrekkingen of rechtsfeiten. De meeste wetgeving geldt voor heel Nederland en heeft daarom geen expliciete plaatsaanduiding. Zodra het werkingsgebied beperkter of ruimer moet zijn, wordt in wetgeving wel een expliciete plaatsaanduiding opgenomen. Net als de tijdsaanduiding is de plaatsaanduiding apart opgenomen in het juridisch analyseschema, hoewel deze gezien zou kunnen worden als een variabele of parameter.<br>Een formulering in de wetgeving kan zowel tot de klasse plaatsaanduiding als tot de klasse parameter of variabele behoren. Als dit zich voordoet, kiezen we voor de meest specifieke klasse, namelijk de plaatsaanduiding.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Een vraag voor het vinden van een plaatsaanduiding kan zijn: Waar (voor welk gebied of welke plaats) geldt de wettelijke regel (niet)?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>De plaatsaanduiding wordt uitgedrukt met een algemene beschrijving van het gebied (een lidstaat van de EU) of met de naam van een specifiek gebied (de gemeente Amsterdam, de provincie Limburg, Nederland, Zwitserland).</td>
+</tr>
+</tbody></table>
+</section><section id="delegatiebevoegdheid-invulling"><div class="header-wrapper"><h4 id="x2-2-12-delegatiebevoegdheid-invulling"><bdi class="secno">2.2.12 </bdi>Delegatiebevoegdheid/-invulling</h4><a class="self-link" href="#delegatiebevoegdheid-invulling" aria-label="Permalink for Section 2.2.12"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-delegatiebevoegdheid" tabindex="0" aria-haspopup="dialog">Delegatiebevoegdheid</dfn> en <dfn id="dfn-delegatie-invulling" tabindex="0" aria-haspopup="dialog">Delegatie-invulling</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een <em>delegatiebevoegdheid</em> maakt het mogelijk of schrijft voor dat (nadere) regels worden gesteld over een rechtsbetrekking, rechtsfeit of afleidingsregel. Met <em>delegatie-invulling</em> duiden we de regeling of het regelingsonderdeel aan waarin de delegatiebevoegdheid is gebruikt. Hoewel de delegatiebevoegdheid en de delegatie-invulling aparte klassen zijn, beschouwen we ze hier gezamenlijk vanwege hun nauwe samenhang.<br>Een delegatiebevoegdheid wordt altijd aan een specifiek rechtssubject toegekend; dat kan de regering zijn (bij een amvb, vastgesteld door de Koning) of een minister (bij een ministeriële regeling). Het kan gaan om verplichte of een facultatieve delegatie (zie onder het kopje Uitdrukkingswijze). In het eerste geval moeten de in de wet genoemde onderwerpen worden uitgewerkt in een lagere regeling. In het tweede geval is er een keuze om de wettelijke regels al dan niet uit te werken. Ook is vaak subdelegatie mogelijk. Dat betekent dat bepalingen in een amvb verder kunnen worden uitgewerkt in een ministeriële regeling (zie ook bij uitdrukkingswijze). Het herkennen van delegatiebevoegdheden is vooral van belang voor het bepalen van het werkgebied van de Wets analyse. Als de delegatiebevoegdheid daadwerkelijk is gebruikt, moet de op grond daarvan vastgestelde gedelegeerde regelgeving in het werkgebied worden betrokken.<br>De delegerende wet bevat logischerwijs geen concrete verwijzingen naar de delegatie-invulling. Die is immers op het moment van voorbereiden van die wet nog niet vastgesteld.<br>Ook in de delegerende regeling zijn de grondslagen niet altijd eenvoudig op artikelniveau terug te vinden. In hoofdstuk 5 gaan we in op mogelijk heden om de kenbaarheid van delegatiegrondslagen in gedelegeerde regelingen te verbeteren. Voor het in kaart brengen van de gedelegeerde regelingen die tot het werkgebied behoren, kan gebruik gemaakt worden van de wetsinformatie die in wetten.nl bij een artikel is opgenomen. Deze is echter niet altijd volledig. Afstemming met wetgevingsjuristen om het werkgebied compleet te maken is daarom van belang.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>Vragen voor het vinden van delegatiebevoegdheden of -invullingen kunnen zijn: Geeft een wetsartikel de opdracht om (nadere) regels te stellen? Verwijst een bepaling in een gedelegeerde regeling naar een artikel in de bovenliggende wet?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Verplichte delegatie wordt geformuleerd met de zinsnede ‘bij (of krachtens) algemene maatregel van bestuur/bij ministeriële regeling worden regels gesteld (…)’. Een facultatieve bevoegdheid wordt geformuleerd met de woorden ‘kunnen regels worden gesteld’.<br>Indien de formulering ‘bij of krachtens’ wordt gebruikt in een delegatiebevoegdheid, kan subdelegatie plaatsvinden. Als op grond van een dergelijke delegatiebevoegdheid in een wet een amvb wordt vastgesteld, dan kunnen in de amvb bepaalde zaken worden doorgedelegeerd naar een ministeriële regeling. In de delegatie-invulling wordt niet met standaard uitdrukkingswijzen gewerkt.</td>
+</tr>
+</tbody></table>
+</section><section id="brondefinitie"><div class="header-wrapper"><h4 id="x2-2-13-brondefinitie"><bdi class="secno">2.2.13 </bdi>Brondefinitie</h4><a class="self-link" href="#brondefinitie" aria-label="Permalink for Section 2.2.13"></a></div>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>voorkeursterm</strong></td>
+<td><dfn id="dfn-brondefinitie" tabindex="0" aria-haspopup="dialog">Brondefinitie</dfn></td>
+</tr>
+<tr>
+<td><strong>omschrijving klasse</strong></td>
+<td>Een brondefinitie is een begripsomschrijving die expliciet is opgenomen in de wetgeving en een eenduidige betekenis geeft aan een in de wetgeving (veel) gebruikte term. Brondefinities staan in de regel in een of meer artikelen aan het begin van een wet of gedelegeerde regeling. Als in de wet een term is gedefinieerd, wordt deze definitie standaard hergebruikt in de daarop gebaseerde gedelegeerde regelingen. De definities worden in de gedelegeerde regeling niet opnieuw opgenomen.<br>Brondefinities moeten worden onderscheiden van de begrippen en begripsomschrijvingen die bij de Wetsanalyse worden gemaakt voor geclassificeerde formuleringen in de wetgeving. Deze begrippen hebben geen directe wettelijke bron,maar zijn nodig om formuleringen uniek te kunnen aanduiden.</td>
+</tr>
+<tr>
+<td><strong>vraag</strong></td>
+<td>De logische vraag voor het vinden van een brondefinitie is: Is deze term uitdrukkelijk omschreven in de wetgeving?</td>
+</tr>
+<tr>
+<td><strong>uitdrukkingswijze</strong></td>
+<td>Een artikel met brondefinities bestaat in de regel uit een aanhef en verschillende onderdelen, bij voorkeur in alfabetische volgorde. Vaak is dit artikel aan het begin van de wettelijke regeling opgenomen, maar er kunnen ook brondefinities worden geformuleerd die voor een specifiek onderdeel (een hoofdstuk, paragraaf of zelfs een artikel) gelden.</td>
+</tr>
+</tbody></table>
+</section></section></section><section id="begrippenkader"><div class="header-wrapper"><h2 id="x3-begrippenkader"><bdi class="secno">3. </bdi>Begrippenkader</h2><a class="self-link" href="#begrippenkader" aria-label="Permalink for Section 3."></a></div>
+<section id="begrippenlijst"><div class="header-wrapper"><h3 id="x3-1-begrippenlijst"><bdi class="secno">3.1 </bdi>Begrippenlijst</h3><a class="self-link" href="#begrippenlijst" aria-label="Permalink for Section 3.1"></a></div>
+<p>In bijlage A worden alle in deze standaard gedefinieerde begrippen gerepresenteerd in een alfabetische begrippenlijst in de vorm van een index.</p>
+</section><section id="taxonomie"><div class="header-wrapper"><h3 id="x3-2-taxonomie"><bdi class="secno">3.2 </bdi>Taxonomie</h3><a class="self-link" href="#taxonomie" aria-label="Permalink for Section 3.2"></a></div>
+<p>Het is ook mogelijk een taxonomie van deze begrippen te maken. In <cite><a data-matched-text="[[[NLSBB]]]" href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/">NL-SBB - Standaard voor het beschrijven van begrippen</a></cite> is beschreven dat we het hebben over begrippen en een begrippenkader. Deze kunnen dus worden gezien als topbegrippen in het begrippenkader van deze standaard. Ook wordt aangegeven dat de bron belangrijk is en dat collecties (van begrippen) handig kunnen zijn. 
+De topbegrippen zijn dan: </p>
+<ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtssubject" class="internalDFN" id="ref-for-dfn-rechtssubject-1">rechtssubject</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsobject" class="internalDFN" id="ref-for-dfn-rechtsobject-1">rechtsobject</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsbetrekking" class="internalDFN" id="ref-for-dfn-rechtsbetrekking-1">rechtsbetrekking</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-delegatiebevoegdheid" class="internalDFN" id="ref-for-dfn-delegatiebevoegdheid-1">delegatiebevoegdheid</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-delegatie-invulling" class="internalDFN" id="ref-for-dfn-delegatie-invulling-1">delegatie-invulling</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsfeit" class="internalDFN" id="ref-for-dfn-rechtsfeit-1">rechtsfeit</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-voorwaarde" class="internalDFN" id="ref-for-dfn-voorwaarde-1">voorwaarde</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-afleidingsregel" class="internalDFN" id="ref-for-dfn-afleidingsregel-1">afleidingsregel</a></li>
+</ul>
+<p>Deze kunnen we in een taxonomie opnemen. In een lijst ziet die er als volgt uit:</p>
+<ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtssubject" class="internalDFN" id="ref-for-dfn-rechtssubject-2">rechtssubject</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsobject" class="internalDFN" id="ref-for-dfn-rechtsobject-2">rechtsobject</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsbetrekking" class="internalDFN" id="ref-for-dfn-rechtsbetrekking-2">rechtsbetrekking</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-delegatiebevoegdheid" class="internalDFN" id="ref-for-dfn-delegatiebevoegdheid-2">delegatiebevoegdheid</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-delegatie-invulling" class="internalDFN" id="ref-for-dfn-delegatie-invulling-2">delegatie-invulling</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-rechtsfeit" class="internalDFN" id="ref-for-dfn-rechtsfeit-2">rechtsfeit</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-voorwaarde" class="internalDFN" id="ref-for-dfn-voorwaarde-2">voorwaarde</a><ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-afleidingsregel" class="internalDFN" id="ref-for-dfn-afleidingsregel-2">afleidingsregel</a><ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-operator" class="internalDFN" id="ref-for-dfn-operator-1">operator</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-variabele" class="internalDFN" id="ref-for-dfn-variabele-1">variabele</a><ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-variabelewaarde" class="internalDFN" id="ref-for-dfn-variabelewaarde-1">variabelewaarde</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-tijdsaanduiding" class="internalDFN" id="ref-for-dfn-tijdsaanduiding-1">tijdsaanduiding</a></li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-plaatsaanduiding" class="internalDFN" id="ref-for-dfn-plaatsaanduiding-1">plaatsaanduiding</a></li>
+</ul>
+</li>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-parameter" class="internalDFN" id="ref-for-dfn-parameter-1">parameter</a><ul>
+<li><a data-link-type="dfn|abstract-op" href="#dfn-parameterwaarde" class="internalDFN" id="ref-for-dfn-parameterwaarde-1">parameterwaarde</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section></section>
   <script>
     let content = "";
 
@@ -439,17 +807,47 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
   <section id="conformance"><div class="header-wrapper"><h2 id="x4-conformiteit"><bdi class="secno">4. </bdi>Conformiteit</h2><a class="self-link" href="#conformance" aria-label="Permalink for Section 4."></a></div><p>Naast onderdelen die als niet normatief gemarkeerd zijn, zijn ook alle diagrammen, voorbeelden, en noten in dit document niet normatief. Verder is alles in dit document normatief.</p></section>
   <section id="tof"><div class="header-wrapper"><h2 id="x5-lijst-met-figuren"><bdi class="secno">5. </bdi>Lijst met figuren</h2><a class="self-link" href="#tof" aria-label="Permalink for Section 5."></a></div><ul class="tof">
         <li class="tofline">
-    <a class="tocxref" href="#fig-onderschrift"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Onderschrift</span></a>
+    <a class="tocxref" href="#fig-juridisch-analyseschema"><span class="self-link">Figuur <bdi class="figno">1</bdi></span> <span class="fig-title">Juridisch Analyseschema</span></a>
   </li><li class="tofline">
-    <a class="tocxref" href="#fig-mermaid-voorbeeld"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Mermaid voorbeeld</span></a>
+    <a class="tocxref" href="#fig-tabel-juridisch-analyseschema"><span class="self-link">Figuur <bdi class="figno">2</bdi></span> <span class="fig-title">Tabel juridisch analyseschema</span></a>
   </li>
       </ul></section>
   <section id="index" class="appendix"><div class="header-wrapper"><h2 id="a-index"><bdi class="secno">A. </bdi>Index</h2><a class="self-link" href="#index" aria-label="Permalink for Appendix A."></a></div><section id="index-defined-here">
     <div class="header-wrapper"><h3 id="a-1-begrippen-gedefinieerd-door-deze-specificatie"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</h3><a class="self-link" href="#index-defined-here" aria-label="Permalink for Appendix A.1"></a></div>
     <ul class="index">
     <li>
-      <a class="index-term" href="#dfn-definitie">Definitie</a> 
-    <span class="print-only">§2.1</span></li>
+      <a class="index-term" href="#dfn-afleidingsregel">Afleidingsregel</a> 
+    <span class="print-only">§2.2.6</span></li><li>
+      <a class="index-term" href="#dfn-brondefinitie">Brondefinitie</a> 
+    <span class="print-only">§2.2.13</span></li><li>
+      <a class="index-term" href="#dfn-delegatie-invulling">Delegatie-invulling</a> 
+    <span class="print-only">§2.2.12</span></li><li>
+      <a class="index-term" href="#dfn-delegatiebevoegdheid">Delegatiebevoegdheid</a> 
+    <span class="print-only">§2.2.12</span></li><li>
+      <a class="index-term" href="#dfn-operator">Operator</a> 
+    <span class="print-only">§2.2.9</span></li><li>
+      <a class="index-term" href="#dfn-parameter">Parameter</a> 
+    <span class="print-only">§2.2.8</span></li><li>
+      <a class="index-term" href="#dfn-parameterwaarde">Parameterwaarde</a> 
+    <span class="print-only">§2.2.8</span></li><li>
+      <a class="index-term" href="#dfn-plaatsaanduiding">Plaatsaanduiding</a> 
+    <span class="print-only">§2.2.11</span></li><li>
+      <a class="index-term" href="#dfn-rechtsbetrekking">Rechtsbetrekking</a> 
+    <span class="print-only">§2.2.3</span></li><li>
+      <a class="index-term" href="#dfn-rechtsfeit">Rechtsfeit</a> 
+    <span class="print-only">§2.2.4</span></li><li>
+      <a class="index-term" href="#dfn-rechtsobject">Rechtsobject</a> 
+    <span class="print-only">§2.2.2</span></li><li>
+      <a class="index-term" href="#dfn-rechtssubject">Rechtssubject</a> 
+    <span class="print-only">§2.2.1</span></li><li>
+      <a class="index-term" href="#dfn-tijdsaanduiding">Tijdsaanduiding</a> 
+    <span class="print-only">§2.2.10</span></li><li>
+      <a class="index-term" href="#dfn-variabele">Variabele</a> 
+    <span class="print-only">§2.2.7</span></li><li>
+      <a class="index-term" href="#dfn-variabelewaarde">Variabelewaarde</a> 
+    <span class="print-only">§2.2.7</span></li><li>
+      <a class="index-term" href="#dfn-voorwaarde">Voorwaarde</a> 
+    <span class="print-only">§2.2.5</span></li>
   </ul>
   </section><section id="index-defined-elsewhere">
     <div class="header-wrapper"><h3 id="a-2-begrippen-gedefinieerd-door-verwijzing"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</h3><a class="self-link" href="#index-defined-elsewhere" aria-label="Permalink for Appendix A.2"></a></div>
@@ -462,23 +860,210 @@ Dit hoofdstuk is toegevoegd met <code>class="informative"</code> in <code>config
 
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix B."></a></div><section id="normatieve-referenties">
     <div class="header-wrapper"><h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3><a class="self-link" href="#normatieve-referenties" aria-label="Permalink for Appendix B.1"></a></div>
-    <dl class="bibliography"><dt id="bib-semver">[SemVer]</dt><dd>
-      <a href="https://semver.org"><cite>Semantic Versioning 2.0.0</cite></a>. T. Preston-Werner. June 2013. URL: <a href="https://semver.org">https://semver.org</a>
+    <dl class="bibliography"><dt id="bib-nlsbb">[NLSBB]</dt><dd>
+      <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/"><cite>NL-SBB - Standaard voor het beschrijven van begrippen</cite></a>. Geonovum Standaard - versie ter vaststelling.. 16 april 2024. URL: <a href="https://docs.geostandaarden.nl/nl-sbb/nl-sbb/">https://docs.geostandaarden.nl/nl-sbb/nl-sbb/</a>
+    </dd></dl>
+  </section><section id="informatieve-referenties">
+    <div class="header-wrapper"><h3 id="b-2-informatieve-referenties"><bdi class="secno">B.2 </bdi>Informatieve referenties</h3><a class="self-link" href="#informatieve-referenties" aria-label="Permalink for Appendix B.2"></a></div>
+    <dl class="bibliography"><dt id="bib-blkamer">[BLKAMER]</dt><dd>
+      <a href="https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef"><cite>Een kapstok voor herleidbare wet- en regelgeving voor dienstverlening</cite></a>.  Harrie van Houtum (Business KnowHow Services) et al. URL: <a href="https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef">https://wendbarewetsuitvoering.pleio.nl/attachment/1dddbb91-8f6b-4bca-9b4f-5e3d4a19efef</a>
+    </dd><dt id="bib-hohfeld_1">[HOHFELD_1]</dt><dd>
+      <a href="https://openyls.law.yale.edu/bitstream/handle/20.500.13051/11079/05_23YaleLJ16_1913_1914_.pdf?sequence=2"><cite>Some Fundamental Conceptions as Applied in Judicial Reasoning</cite></a>.  Yale Law Journal (23) 1913, afl. 1, p. 16-59. URL: <a href="https://openyls.law.yale.edu/bitstream/handle/20.500.13051/11079/05_23YaleLJ16_1913_1914_.pdf?sequence=2">https://openyls.law.yale.edu/bitstream/handle/20.500.13051/11079/05_23YaleLJ16_1913_1914_.pdf?sequence=2</a>
+    </dd><dt id="bib-hohfeld_2">[HOHFELD_2]</dt><dd>
+      <a href="https://openyls.law.yale.edu/bitstream/handle/20.500.13051/3864/Fundamental_Legal_Conceptions_as_Applied_in_Judicial_Reasoning.pdf?sequence=2"><cite>Fundamental Legal Conceptions as Applied in Judicial Reasoning</cite></a>.  Yale Law Journal (26) 1917, afl. 8, p. 710-770. URL: <a href="https://openyls.law.yale.edu/bitstream/handle/20.500.13051/3864/Fundamental_Legal_Conceptions_as_Applied_in_Judicial_Reasoning.pdf?sequence=2">https://openyls.law.yale.edu/bitstream/handle/20.500.13051/3864/Fundamental_Legal_Conceptions_as_Applied_in_Judicial_Reasoning.pdf?sequence=2</a>
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtssubject" aria-label="Links in this document to definition: Rechtssubject">
       <span class="caret"></span>
       <div>
-        <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
+        <a class="self-link" href="#dfn-rechtssubject" aria-label="Permalink for definition: Rechtssubject. Activate to close this dialog.">Permalink</a>
          
       </div>
       <p><b>Referenced in:</b></p>
       <ul>
     <li>
-      <a href="#ref-for-dfn-definitie-1" title="§ 2.3 Referenties">§ 2.3 Referenties</a> 
+      <a href="#ref-for-dfn-rechtssubject-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-rechtssubject-2" title="Reference 2">(2)</a> 
     </li>
   </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtsobject" aria-label="Links in this document to definition: Rechtsobject">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rechtsobject" aria-label="Permalink for definition: Rechtsobject. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-rechtsobject-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-rechtsobject-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtsbetrekking" aria-label="Links in this document to definition: Rechtsbetrekking">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rechtsbetrekking" aria-label="Permalink for definition: Rechtsbetrekking. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-rechtsbetrekking-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-rechtsbetrekking-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-rechtsfeit" aria-label="Links in this document to definition: Rechtsfeit">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-rechtsfeit" aria-label="Permalink for definition: Rechtsfeit. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-rechtsfeit-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-rechtsfeit-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-voorwaarde" aria-label="Links in this document to definition: Voorwaarde">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-voorwaarde" aria-label="Permalink for definition: Voorwaarde. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-voorwaarde-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-voorwaarde-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-afleidingsregel" aria-label="Links in this document to definition: Afleidingsregel">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-afleidingsregel" aria-label="Permalink for definition: Afleidingsregel. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-afleidingsregel-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-afleidingsregel-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-variabele" aria-label="Links in this document to definition: Variabele">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-variabele" aria-label="Permalink for definition: Variabele. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-variabele-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-variabelewaarde" aria-label="Links in this document to definition: Variabelewaarde">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-variabelewaarde" aria-label="Permalink for definition: Variabelewaarde. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-variabelewaarde-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-parameter" aria-label="Links in this document to definition: Parameter">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-parameter" aria-label="Permalink for definition: Parameter. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-parameter-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-parameterwaarde" aria-label="Links in this document to definition: Parameterwaarde">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-parameterwaarde" aria-label="Permalink for definition: Parameterwaarde. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-parameterwaarde-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-operator" aria-label="Links in this document to definition: Operator">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-operator" aria-label="Permalink for definition: Operator. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-operator-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-tijdsaanduiding" aria-label="Links in this document to definition: Tijdsaanduiding">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-tijdsaanduiding" aria-label="Permalink for definition: Tijdsaanduiding. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-tijdsaanduiding-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-plaatsaanduiding" aria-label="Links in this document to definition: Plaatsaanduiding">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-plaatsaanduiding" aria-label="Permalink for definition: Plaatsaanduiding. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-plaatsaanduiding-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-delegatiebevoegdheid" aria-label="Links in this document to definition: Delegatiebevoegdheid">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-delegatiebevoegdheid" aria-label="Permalink for definition: Delegatiebevoegdheid. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-delegatiebevoegdheid-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-delegatiebevoegdheid-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-delegatie-invulling" aria-label="Links in this document to definition: Delegatie-invulling">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-delegatie-invulling" aria-label="Permalink for definition: Delegatie-invulling. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dfn-delegatie-invulling-1" title="§ 3.2 Taxonomie">§ 3.2 Taxonomie</a> <a href="#ref-for-dfn-delegatie-invulling-2" title="Reference 2">(2)</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-brondefinitie" aria-label="Links in this document to definition: Brondefinitie">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dfn-brondefinitie" aria-label="Permalink for definition: Brondefinitie. Activate to close this dialog.">Permalink</a>
+         
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+      <li>Not referenced in this document.</li>
+    </ul>
     </div><script id="respec-dfn-panel">(() => {
 // @ts-check
 if (document.respec) {
@@ -701,4 +1286,4 @@ function hidePanel(panel) {
   panel.hidden = true;
   panel.classList.remove("docked");
 }
-})()</script><div class="sidelabel">Logius Handreiking - Vastgestelde versie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
+})()</script><div class="sidelabel">MinBZK Informatiemodel - Vastgestelde versie</div><script src="https://www.w3.org/scripts/TR/2021/fixup.js"></script></body></html>
