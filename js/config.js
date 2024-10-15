@@ -24,7 +24,9 @@ let respecConfig = {
   content: {
     "H1-classificaties": "",
     "H2-scenarios": "",
-    "H3-rechtsgevolg": ""
+    "H3-rechtsgevolg": "",
+    "H4-relevantfeit": "",
+    "H5-classificatiewaarde": ""
   },
   editors: [
     {

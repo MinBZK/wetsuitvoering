@@ -1,0 +1,2 @@
+# Waarde ter vervanging van parameter- en variabelewaarde
+Een andere aanpassing is het samenvoegen van de classificatie parameterwaarde en variabelewaarde in de classificatie waarde. In essentie zijn beide classificaties namelijk identiek, ze beschrijven een expliciet in wet- en regelgeving opgenomen waarde. Enige verschil is de koppeling van deze waarde naar een (min of meer) constante (parameter) of een variabele. Zodoende zijn deze twee classificaties samengevoegd. 
