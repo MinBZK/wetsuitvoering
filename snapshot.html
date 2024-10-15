@@ -3,19 +3,6 @@
 <meta content="text/html; charset=utf-8" http-equiv="content-type">
 <meta name="generator" content="ReSpec 35.1.1">
 <style>
-.issue-label{text-transform:initial}
-.warning>p:first-child{margin-top:0}
-.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
-span.warning{padding:.1em .5em .15em}
-.issue.closed span.issue-number{text-decoration:line-through}
-.issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
-.warning{border-color:#f11;border-color:var(--warning-border,#f11);border-width:.2em;border-style:solid;background:#fbe9e9;background:var(--warning-bg,#fbe9e9);color:#000;color:var(--text,#000)}
-.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
-li.task-list-item{list-style:none}
-input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
-.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
-</style>
-<style>
 dfn{cursor:pointer}
 .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;background:var(--indextable-hover-bg,#fff);color:#000;color:var(--text,#000);box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);box-shadow:0 1em 3em -.4em var(--tocsidebar-shadow,rgba(0,0,0,.3)),0 0 1px 1px var(--tocsidebar-shadow,rgba(0,0,0,.05));border-radius:2px}
 .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
@@ -107,7 +94,7 @@ ul.index code{color:inherit}
 #index-defined-here .print-only{display:initial}
 }
 </style>
-<meta name="description" content="Deze Wetsanalyse specificatie beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.">
+<meta name="description" content="In het boek Wetsanalyse1 wordt gesproken over het Juridisch Analyseschema (JAS). Het JAS is een classificatieschema voor de juridisch elementen in wet- en regelgeving. Het JAS is met name gericht op het analyseren van bestaande wet- en regelgeving, naar het inzicht van begin 2021.">
 <style>
 
   .sidelabel {
@@ -147,6 +134,10 @@ ul.index code{color:inherit}
   ],
   "postProcess": [
     null
+  ],
+  "latestVersion": [
+    "nl_organisationPublishURL",
+    "shortName"
   ],
   "thisVersion": [
     "nl_organisationPublishURL",
@@ -339,7 +330,7 @@ ul.index code{color:inherit}
               <a class="u-url status" href="https://minbzk.github.io/wetgeving/">https://minbzk.github.io/wetgeving/</a>
             </dd>
       <dt>Laatst gepubliceerde versie:</dt><dd>
-              <a href="https://regels.overheid.nl/publicaties/ronl/wetgeving">https://regels.overheid.nl/publicaties/ronl/wetgeving</a>
+              <a href="https://regels.overheid.nl/publicaties/wetgeving">https://regels.overheid.nl/publicaties/wetgeving</a>
             </dd>
       <dt>Laatste werkversie:</dt><dd><a href="https://minbzk.github.io/wetgeving/">https://minbzk.github.io/wetgeving/</a></dd>
       
@@ -384,12 +375,10 @@ ul.index code{color:inherit}
     <hr title="Separator for header">
   </div>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2>
-<p>Deze <strong>Wetsanalyse specificatie</strong> beschrijft het juridisch analyseschema dat gebruikt wordt bij Wetsanalyse en waarin verschillende juridische elementen die in wetgeving voorkomen in samenhang gerangschikt zijn. Deze elementen vormen de klassen die bij Wetsanalyse aan formuleringen in de wetgeving worden toegekend. Het indelen van formuleringen in juridische klassen biedt ondersteuning bij het expliciet maken van de betekenis van die formuleringen.</p>
-<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Noot</span><span class="issue-label">: Boek</span></div><p class="">
-Het juridisch analyse schema dat onderwerp is van deze specificatie komt uit het boek Wetsanalyse, Voor een werkbare uitvoering van wetgeving met ICT, van de auteur(s): Anouschka Ausems, John Bulles en Mariette Lokin.<br>
-<br>
-<a href="https://www.boomdenhaag.nl/webshop/wetsanalyse">Dit boek</a> wordt uitgeven door Boom uitgevers Den Haag.
-</p></div></section>
+<p>In het boek Wetsanalyse1 wordt gesproken over het Juridisch Analyseschema (JAS). Het JAS is een classificatieschema voor de juridisch elementen in wet- en regelgeving. Het JAS is met name gericht op het analyseren van bestaande wet- en regelgeving, naar het inzicht van begin 2021.</p>
+<p>In de periode zomer 2021 zomer 2024 is Wetsanalyse op een behoorlijk aantal praktijktoepassingen uitgetest. We stellen het op prijs expliciet te mogen vermelden dat Diederik Dulfer, ook zeer actief lid van de Blauwe Kamer, in die periode tot een week voor zijn dood in maart 2024 actief heeft bijgedragen; aan hem hebben we onder meer mede te danken dat we een vijfde soort rechtsfeit hebben ontdekt (samen met Mr Tobias Jekel van de Belastingdienst) dat nu onderdeel is van het JRM.</p>
+<p>De voornaamste conclusies van die praktijktoepassingen, doorontwikkeling en voortschrijdend inzicht vormen het onderwerp van dit document.</p>
+</section>
   <section id="sotd" class="introductory"><h2>Status van dit document</h2><p>Dit is een werkversie die op elk moment kan worden gewijzigd, verwijderd of vervangen door andere documenten. Het is geen door het TO goedgekeurde consultatieversie.</p></section><nav id="toc"><h2 class="introductory" id="inhoudsopgave">Inhoudsopgave</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Samenvatting</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status van dit document</a></li><li class="tocline"><a class="tocxref" href="#de-juridische-hoofdclassificaties-van-het-jrm"><bdi class="secno">1. </bdi>De juridische hoofdclassificaties van het JRM</a></li><li class="tocline"><a class="tocxref" href="#juridische-scenario-s-als-kernonderdeel-in-het-jrm"><bdi class="secno">2. </bdi>Juridische scenario’s als kernonderdeel in het JRM</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#waarom-is-met-wetsanalyse-niet-altijd-het-beoogde-resultaat-behaald"><bdi class="secno">2.1 </bdi>Waarom is met Wetsanalyse niet altijd het beoogde resultaat behaald?</a></li></ol></li><li class="tocline"><a class="tocxref" href="#expliciet-toevoegen-van-de-classificatie-rechtsgevolg"><bdi class="secno">3. </bdi>Expliciet toevoegen van de classificatie rechtsgevolg</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">4. </bdi>Conformiteit</a></li><li class="tocline"><a class="tocxref" href="#index"><bdi class="secno">A. </bdi>Index</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#index-defined-here"><bdi class="secno">A.1 </bdi>Begrippen gedefinieerd door deze specificatie</a></li><li class="tocline"><a class="tocxref" href="#index-defined-elsewhere"><bdi class="secno">A.2 </bdi>Begrippen gedefinieerd door verwijzing</a></li></ol></li></ol></nav><section id="de-juridische-hoofdclassificaties-van-het-jrm"><div class="header-wrapper"><h2 id="x1-de-juridische-hoofdclassificaties-van-het-jrm"><bdi class="secno">1. </bdi>De juridische hoofdclassificaties van het JRM</h2><a class="self-link" href="#de-juridische-hoofdclassificaties-van-het-jrm" aria-label="Permalink for Section 1."></a></div>
 <p>Bij de methode Wetsanalyse o.b.v. het JRM 2 wordt vanuit de Wetsanalyseopdracht via een praktijkvoorbeeld in tekst en de opbouw van een juridisch scenario op de tijdlijn in eerste instantie vanuit het juridisch perspectief gekeken naar de relevante tekst van wet- of regelgeving. Bij het opstellen van juridische scenario’s kan vaak hergebruik van bekende patronen van juridische elementen worden toegepast, mits men bekend is met deze patronen, bijvoorbeeld uit opleiding of eerdere uitwerkingen. Een aantal classificaties zijn in het JRM 2 als hoofdclassificatie geduid, welke onafhankelijk van de andere classificaties in wet- en regelgeving beschreven worden, maar wel onderling gerelateerd zijn. Enkele van de andere classificaties zijn ondersteunend aan deze hoofdclassificaties. De in de periode 2021-2024 onderkende hoofdclassificaties zijn:
     1. rechtssubject,
