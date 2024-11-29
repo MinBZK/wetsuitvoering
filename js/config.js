@@ -11,7 +11,7 @@ let respecConfig = {
   // shortName = Repository name as is
   shortName: "wetsuitvoering",
   publishDate: "2024-11-29",
-  publishVersion: "1.0.1",
+  publishVersion: "1.0.2",
 
   previousPublishVersion: "",
   previousPublishDate: "",
