@@ -10,8 +10,8 @@ let respecConfig = {
 
   // shortName = Repository name as is
   shortName: "wetgeving",
-  publishDate: "2024-10-15",
-  publishVersion: "1.0.0",
+  publishDate: "2024-11-29",
+  publishVersion: "0.0.1",
 
   previousPublishVersion: "",
   previousPublishDate: "",
@@ -88,7 +88,7 @@ let respecConfig = {
   alternateFormats: [
     {
         label: "pdf",
-        uri: "Wetsuitvoering.pdf",
+        uri: "https://regels.overheid.nl/standaarden/wetsuitvoering/pdf",
     },
   ],
 };
