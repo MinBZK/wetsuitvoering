@@ -9,9 +9,9 @@ let respecConfig = {
   pubDomain: "ronl",
 
   // shortName = Repository name as is
-  shortName: "wetgeving",
+  shortName: "wetsuitvoering",
   publishDate: "2024-11-29",
-  publishVersion: "0.0.1",
+  publishVersion: "1.0.1",
 
   previousPublishVersion: "",
   previousPublishDate: "",
