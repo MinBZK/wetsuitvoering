@@ -8,10 +8,16 @@ on:
 jobs:
   build:
     name: Build
+    permissions:
+      pages: write
+      id-token: write
     uses: Logius-standaarden/Automatisering/.github/workflows/build.yml@snapshot-in-repo
   check:
     needs: build
     name: Check
+    permissions:
+      pages: write
+      id-token: write
     uses: Logius-standaarden/Automatisering/.github/workflows/check.yml@main
   publish:
     needs: build
